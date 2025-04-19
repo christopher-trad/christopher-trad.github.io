@@ -9,6 +9,15 @@
 
     </head>
     <body>
-        <div>>Welcome to this website try one of our features!</div>
+        <audio id="myaudio" src="music/Konna Netlaka.mp3"></audio>
+        <div>Welcome to this website try one of our features!</div>
+        <button id="music-button" onclick="playmusic()">music</button>
+        <script>
+            function playmusic() {
+                var audio = 
+                document.getElementById("myaudio");
+                audio.play();
+            }
+        </script>
     </body>
 </html>
