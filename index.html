@@ -11,13 +11,28 @@
     <body>
         <audio id="myaudio" src="music/Konna Netlaka.mp3"></audio>
         <div>Welcome to this website try one of our features!</div>
-        <button id="music-button" onclick="playmusic()">music</button>
+        <div class="button-row">
+        <button id="buttonstart" onclick="playmusic()">Play</button>
+        <button id="buttonpause" onclick="pausemusic()">Pause</button>
+        <button id="buttonreset" onclick="resetmusic()">Reset</button>
+        </div>
         <script>
             function playmusic() {
                 var audio = 
                 document.getElementById("myaudio");
                 audio.play();
             }
+            function resetmusic() {
+                var audio = 
+                document.getElementById("myaudio");
+                audio.currentTime = 0;
+            }
+            function pausemusic() {
+            var audio = 
+            document.getElementById("myaudio");
+                audio.pause();
+            }
         </script>
+        
     </body>
 </html>
