@@ -1,38 +1,28 @@
 <!DOCTYPE html>
-<html lang="english">
+<html lang="en">
     <head>
-        <title>First website</title>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-compatible" content="IE-edge">
-        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+        <title>Restaurent</title>
 
     </head>
     <body>
-        <audio id="myaudio" src="music/Konna Netlaka.mp3"></audio>
-        <div>Welcome to this website try one of our features!</div>
-        <div class="button-row">
-        <button id="buttonstart" onclick="playmusic()">Play</button>
-        <button id="buttonpause" onclick="pausemusic()">Pause</button>
-        <button id="buttonreset" onclick="resetmusic()">Reset</button>
-        </div>
-        <script>
-            function playmusic() {
-                var audio = 
-                document.getElementById("myaudio");
-                audio.play();
-            }
-            function resetmusic() {
-                var audio = 
-                document.getElementById("myaudio");
-                audio.currentTime = 0;
-            }
-            function pausemusic() {
-            var audio = 
-            document.getElementById("myaudio");
-                audio.pause();
-            }
-        </script>
-        
+    <audio src="audios/restaurant-239024.mp3" autoplay loop></audio>
+    <header>
+        <h1>Welcome to the restaurent</h1>
+        <nav class="navigationbar">
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="employes.html">Employes</a></li>
+                <li><a href="order.html">Order</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    
+    
     </body>
 </html>
