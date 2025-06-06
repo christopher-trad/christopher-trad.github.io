@@ -263,3 +263,9 @@ h1{
   opacity: 1;
   visibility: visible;
 }
+@media screen and (max-width: 600px) {
+  .navigationbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
