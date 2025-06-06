@@ -21,10 +21,12 @@
 }
 body{
     background-image: url(images/—Slidesdocs—elegant\ ambience\ a\ beautifully\ rendered_357ae15ebf.jpg);
-    background-size: cover;
-    background-repeat: repeat ;
+    background-size: cover;        
+    background-position: center;    
+    background-repeat: no-repeat;   
+    background-attachment: fixed;   
+    min-height: 100vh;              
     margin: 0px;
-    height: 100%;
 }
 h1{
     color: rgb(255, 255, 255);
