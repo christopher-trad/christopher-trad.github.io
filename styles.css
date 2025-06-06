@@ -1,9 +1,10 @@
 .navigationbar ul{
-    background-color: rgb(73, 73, 73);
+    background-color: rgb(75, 30, 30);
     padding: 0px;
     margin: 0px;
     list-style: none;
     overflow: hidden;
+    border-radius: 10px;
 }
 .navigationbar a{
     color: white;
@@ -35,34 +36,23 @@ h1{
     justify-content: center;
 }
 .menu-item1 {
-    border: solid 0px white;
     background-color: white;
     display: inline-block;
     margin: 20px;
     padding: 20px;
-    box-shadow: 7px 7px 10px black;
+    box-shadow: 7px 7px 20px rgb(224, 255, 84);
     border-radius: 12px;
+    cursor: pointer;
 }
-#burger-text {
-    color: hsl(51, 100%, 49%);
-    text-shadow: 3px 3px 7px gold;  
-    align-items: center;
+.menu-item1 h3{
+    color: hsl(0, 0%, 11%);
+    text-shadow: 3px 3px 7px rgb(255, 234, 116);  
+    font-family: 'poppins';
+    text-align: center;
     display: flex;
     justify-content: center;
 }
-#burger-button {
-    background-color: black;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Times New Roman', Times, serif;
-    margin-left: 30px;
-}
-#burger-button:hover {
-    transform: translate(10px -10px);
-    color: black;
-    background-color: white;
-}
+
 .about-us {
     max-width: 800px;
     margin: 50px auto;
@@ -95,7 +85,7 @@ h1{
     margin-top: 30px;
 }
 .card {
-    background: linear-gradient(135deg,rgba(255,255,255,0));
+    background: linear-gradient(135deg,rgba(255, 255, 255, 0));
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(3px);
     border-radius: 12px;
@@ -105,6 +95,7 @@ h1{
     width: 180px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: transform 0.3s ease;
+    --glow-color:
 }
 .card:hover {
     transform: translateY(-5px);
@@ -130,4 +121,143 @@ h1{
     border: 1px solid rgb(0, 0, 0);
     background-color: rgb(0, 0, 0);
     border-radius: 20px;
+}
+.veggie-burger{
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 7px 7px 20px rgb(33, 33, 33);
+    border-radius: 12px;
+}
+.veggie-burger h3{
+    color: hsl(0, 0%, 11%);
+    text-shadow: 3px 3px 7px rgb(255, 234, 116);  
+    font-family: 'poppins';
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.menu{
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+.menu-item1{
+    flex-wrap: wrap;
+}
+.veggie-burger {
+  opacity: 0;
+  visibility: hidden;
+  margin-left: 10px;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.veggie-burger.visible {
+  opacity: 1;
+  visibility: visible;
+}
+.bacon-burger{
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 7px 7px 20px rgb(33, 33, 33);
+    border-radius: 12px;
+}
+.bacon-burger h3{
+    color: hsl(0, 0%, 11%);
+    text-shadow: 3px 3px 7px rgb(255, 234, 116);  
+    font-family: 'poppins';
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.bacon-burger {
+  opacity: 0;
+  visibility: hidden;
+  margin-left: 10px;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.bacon-burger.visible {
+  opacity: 1;
+  visibility: visible;
+}
+.egg-burger{
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 7px 7px 20px rgb(33, 33, 33);
+    border-radius: 12px;
+}
+.egg-burger h3{
+    color: hsl(0, 0%, 11%);
+    text-shadow: 3px 3px 7px rgb(255, 234, 116);  
+    font-family: 'poppins';
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.egg-burger {
+  opacity: 0;
+  visibility: hidden;
+  margin-left: 10px;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.egg-burger.visible {
+  opacity: 1;
+  visibility: visible;
+}
+.chicken-burger{
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 7px 7px 20px rgb(33, 33, 33);
+    border-radius: 12px;
+}
+.chicken-burger h3{
+    color: hsl(0, 0%, 11%);
+    text-shadow: 3px 3px 7px rgb(255, 234, 116);  
+    font-family: 'poppins';
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.chicken-burger {
+  opacity: 0;
+  visibility: hidden;
+  margin-left: 10px;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.chicken-burger.visible {
+  opacity: 1;
+  visibility: visible;
+}
+.classic-burger{
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 7px 7px 20px rgb(33, 33, 33);
+    border-radius: 12px;
+    width:150px ;
+}
+.classic-burger h3{
+    color: hsl(0, 0%, 11%);
+    text-shadow: 3px 3px 7px rgb(255, 234, 116);  
+    font-family: 'poppins';
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.classic-burger {
+  opacity: 0;
+  visibility: hidden;
+  margin-left: 10px;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.classic-burger.visible {
+  opacity: 1;
+  visibility: visible;
 }
